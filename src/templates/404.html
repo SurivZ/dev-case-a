@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<link href="{{ url_for('static', filename='resources/favicon.png') }}" rel="icon" type="imagen/png" />
+	<title>Error 404</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/404.css') }}">
+</head>
+
+<body>
+	<div class="err-box">
+		<div class="message">
+			<div class="svg">
+				<img src="{{ url_for('static', filename='resources/404.svg') }}" alt="404">
+			</div>
+			<div class="info-box">
+				<h1>No encontrado</h1>
+				<h2><a href="/">Regresar al inicio</a></h2>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
